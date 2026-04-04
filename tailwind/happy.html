@@ -1,11 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+<link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"/>
+      </head>
+  <body class="min-h-screen bg-indigo-400">
+    <!-- ================= NAVBAR ================= -->
+    <nav class="bg-blue-800 h-10 top-0 sticky z-50">
+      <div class="flex justify-between px-6 h-10">
+        <h1 class="text-white font-bold text-2xl">Logo</h1>
+        <div class="text-white space-x-1 font-bold text-2xl font-bold">
+          <button>Cart</button>
+          <button>Login</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= CATEGORY / FILTER BAR ================= -->
+    <section class="flex flex-wrap justify-center items-center space-x-9 bg-blue-500 pb-4 shadow-lg sticky top-10 z-40">
+      <button class="bg-blue-300 text-white w-32 mt-4  px-4 py-1 rounded-full cursor-pointer">home</button>
+      <button class="bg-blue-300 text-white w-32 mt-4  px-4 py-1 rounded-full cursor-pointer">products</button>
+      <button class="bg-blue-300 text-white w-32 mt-4  px-4 py-1 rounded-full cursor-pointer">promotion</button>
+      <button class="bg-blue-300 text-white w-32 mt-4  px-4 py-1 rounded-full cursor-pointer">contact</button>
+
+      <!-- Search box -->
+      <div class="relative mt-4">
+        <span class="material-symbols-outlined absolute left-3 top-1.5 text-gray-500">search</span>
+        <input 
+          type="text" 
+          placeholder="search..." 
+          class="pl-10 pr-4 py-1 rounded-full border focus:outline-none focus:ring-2 focus:ring-blue-400"
+        />
+       </div>
+    </section>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="flex justify-center p-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-8 text-white">
+        <div class="bg-blue-300 rounded-xl shadow-sm overflow-hidden">
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSme7JNKT0syKLUWP36G8CLCuRPbtWBMNbTWQ&s"
+              class="w-full h-48 object-cover"
+              alt=""
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-lg">headphone</h3>
+            <p>50.99$</p>
+          </div>
+          <div class="flex justify-end px-4 py-4 mt-4">
+            <button class="mt-4 bg-blue-600 px-4 py-1 rounded-full font-bold">add to cart</button>
+          </div>
+        </div>
+
+        <div class="bg-blue-300 rounded-xl shadow-sm overflow-hidden">
+          <div>
+            <img
+              src="https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/plp-x/phones-v5/product-shelf-and-pop-up/view-all/all-pura80-pro.jpg"
+              class="w-full h-48 object-cover"
+              alt=""
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-lg">headphone</h3>
+            <p>50.99$</p>
+          </div>
+          <div class="flex justify-end px-4 py-4 mt-4">
+            <button class="mt-4 bg-blue-600 px-4 py-1 rounded-full font-bold">add to cart</button>
+          </div>
+        </div>
+
+        <div class="bg-blue-300 rounded-xl shadow-sm overflow-hidden">
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTndMcJW71HLgi9ntgoterJiJJjLxbtOVVpyA&s"
+              class="w-full h-48 object-cover"
+              alt=""
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-lg">headphone</h3>
+            <p>50.99$</p>
+          </div>
+          <div class="flex justify-end px-4 py-4 mt-4">
+            <button class="mt-4 bg-blue-600 px-4 py-1 rounded-full font-bold">add to cart</button>
+          </div>
+        </div>
+
+        <div class="bg-blue-300 rounded-xl shadow-sm overflow-hidden">
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1FG0kI5YvPkrvzqWjT-FcEkHBEfLOVyHW_w&s"
+              class="w-full h-48 object-cover"
+              alt=""
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-lg">headphone</h3>
+            <p>50.99$</p>
+          </div>
+          <div class="flex justify-end px-4 py-4 mt-4">
+            <button class="mt-4 bg-blue-600 px-4 py-1 rounded-full font-bold">add to cart</button>
+          </div>
+        </div>
+
+        <div class="bg-blue-300 rounded-xl shadow-sm overflow-hidden">
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1FG0kI5YvPkrvzqWjT-FcEkHBEfLOVyHW_w&s"
+              class="w-full h-48 object-cover"
+              alt=""
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-lg">headphone</h3>
+            <p>50.99$</p>
+          </div>
+          <div class="flex justify-end px-4 py-4 mt-4">
+            <button class="mt-4 bg-blue-600 px-4 py-1 rounded-full font-bold">add to cart</button>
+          </div>
+        </div>
+
+        <div class="bg-blue-300 rounded-xl shadow-sm overflow-hidden">
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1FG0kI5YvPkrvzqWjT-FcEkHBEfLOVyHW_w&s"
+              class="w-full h-48 object-cover"
+              alt=""
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-lg">headphone</h3>
+            <p>50.99$</p>
+          </div>
+          <div class="flex justify-end px-4 py-4 mt-4">
+            <button class="mt-4 bg-blue-600 px-4 py-1 rounded-full font-bold">add to cart</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
